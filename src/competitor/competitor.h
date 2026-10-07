@@ -23,6 +23,7 @@
 #include "sali/sali.h"
 #include "stl_unordered_map/stl_unordered_map.h"
 #include "stl_map/stl_map.h"
+#include "lab1_25803050102/lab1_hash.h"
 #include "iostream"
 
 template<class KEY_TYPE, class PAYLOAD_TYPE>
@@ -33,6 +34,9 @@ indexInterface<KEY_TYPE, PAYLOAD_TYPE> *get_index(std::string index_type) {
   }
   else if (index_type == "stl_map"){
     index = new STLMapInterface<KEY_TYPE, PAYLOAD_TYPE>;
+  }
+  else if (index_type == "lab1_25803050102") {
+    index = new Lab1HashInterface<KEY_TYPE, PAYLOAD_TYPE>;
   }
   else if (index_type == "alexol") {
     index = new alexolInterface<KEY_TYPE, PAYLOAD_TYPE>;
