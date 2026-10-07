@@ -1,0 +1,42 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "inputs":[
+        {
+            "id": "splitArgs",
+            "type": "command",
+            "command": "extension.commandvariable.transform",
+            "args": {
+              "text": "${input:rawArgs}",  // 原始输入
+              "find": "\\s+(?=(?:[^\\\"]*\\\"[^\\\"]*\\\")*[^\\\"]*$)",  // 正则分割（忽略引号内的空格）
+              "replace": "\", \"",         // 替换为列表格式
+              "flags": "g"
+            }
+          },
+          {
+            "id": "rawArgs",
+            "type": "promptString",
+            "description": "Enter program arguments (e.g. --key=100 --type=int)",
+            "default": "--key=100 --type=int"
+          }
+    ],
+    "configurations": [      
+        
+        {
+            "name": "unit_test",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build_debug/microbench",
+            "args":["--keys_file=./data/zipf_200M_uint64", "--keys_file_type=binary", "--table_size=-1", "--thread_num=1", "--output_path=./results/single_thread_throughput_debug.csv", "--index=alex", "--operations_num=125000000", "--init_table_ratio=0.5", "--read=0.19", "--insert=0.8", "--scan=0.01"],
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            //"preLaunchTask": "CMake: 生成"
+            "preLaunchTask": "build"
+        },
+        
+    ]
+}
