@@ -1,0 +1,13 @@
+# 构建与实验产物
+/build
+/results
+/result
+
+# 本地数据、依赖环境与编辑器配置
+/data
+/env
+/.vscode
+
+# 崩溃转储
+core
+core.[0-9]*

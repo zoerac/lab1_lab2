@@ -1,8 +1,0 @@
-id,read_ratio,insert_ratio,update_ratio,scan_ratio,delete_ratio,lower_bound_ratio,key_path,index_type,throughput,init_table_size,memory_consumption,thread_num,min,50 percentile,90 percentile,99 percentile,99.9 percentile,99.99 percentile,max,avg,seed,scan_num,latency_variance,latency_sample,data_shift,pgm,error_bound,table_size
-20260429171457,0,0,0,0.01,0,0.99,./data/fb_200M_uint64,btree,2482970,200000000,0,1,0,0,0,0,0,0,0,0,1866,100,0,0,0,0,64,200000000
-20260429171529,0,0,0,1,0,0,./data/fb_200M_uint64,btree,1402921,200000000,0,1,0,0,0,0,0,0,0,0,1866,100,0,0,0,0,64,200000000
-20260429172040,0.76,0.2,0,0.04,0,0,./data/fb_200M_uint64,btree,1863212,100000000,0,1,0,0,0,0,0,0,0,0,1866,100,0,0,0,0,64,200000000
-20260429172256,0.475,0.5,0,0.025,0,0,./data/fb_200M_uint64,btree,1784872,100000000,0,1,0,0,0,0,0,0,0,0,1866,100,0,0,0,0,64,200000000
-20260429172426,0.19,0.8,0,0.01,0,0,./data/fb_200M_uint64,btree,1755688,100000000,0,1,0,0,0,0,0,0,0,0,1866,100,0,0,0,0,64,200000000
-20260429172541,0,0.99,0,0.01,0,0,./data/fb_200M_uint64,btree,1709464,100000000,0,1,0,0,0,0,0,0,0,0,1866,100,0,0,0,0,64,200000000
-20260429231701,0,0,0,0.01,0,0.99,./data/fb_200M_uint64,btree,1068268,200000000,0,1,0,0,0,0,0,0,0,0,1866,100,0,0,0,0,64,200000000
