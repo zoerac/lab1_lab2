@@ -1,0 +1,6 @@
+id,read_ratio,insert_ratio,update_ratio,scan_ratio,delete_ratio,lower_bound_ratio,key_path,index_type,throughput,init_table_size,memory_consumption,thread_num,min,50 percentile,90 percentile,99 percentile,99.9 percentile,99.99 percentile,max,avg,seed,scan_num,latency_variance,latency_sample,data_shift,pgm,error_bound,table_size
+20260917232019,0.51,0.49,0,0,0,0,./data/books_200M_uint64,btree,0,102000000,0,1,0,0,0,0,0,0,0,0,1866,100,0,0,0,0,64,200000000
+20260917232116,0.51,0.49,0,0,0,0,./data/books_200M_uint64,btree,0,102000000,0,1,0,0,0,0,0,0,0,0,1866,100,0,0,0,0,64,200000000
+20260917232434,0.01,0.99,0,0,0,0,./data/books_200M_uint64,btree,0,2000000,0,1,0,0,0,0,0,0,0,0,1866,100,0,0,0,0,64,200000000
+20260917232625,0.5,0.5,0,0,0,0,./data/books_200M_uint64,btree,2089436,100000000,0,1,0,0,0,0,0,0,0,0,1867,100,0,0,0,0,64,200000000
+20260917232829,0,0.99,0,0.01,0,0,./data/books_200M_uint64,btree,0,100000000,0,1,0,0,0,0,0,0,0,0,1867,100,0,0,0,0,64,200000000
